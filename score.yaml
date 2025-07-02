@@ -16,3 +16,9 @@ containers:
     image: . # Set by pipeline
     variables:
       MESSAGE: "Hello ephemeral env!"
+      DB_HOST: ${resources.db.host}
+      DB_USERNAME: ${resources.db.username}
+
+resources:
+  db:
+    type: mysql
