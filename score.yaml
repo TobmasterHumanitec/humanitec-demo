@@ -15,4 +15,8 @@ containers:
   demo:
     image: . # Set by pipeline
     variables:
-      MESSAGE: "Hello ephemeral env!"
+      MESSAGE: "Hello demo!"
+
+resources:
+  db:
+    type: mysql
