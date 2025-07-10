@@ -16,3 +16,6 @@ containers:
     image: . # Set by pipeline
     variables:
       MESSAGE: "Hello new message!"
+resources:
+  db:
+    type: mysql
